@@ -7,27 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rhythmlogger.github.io</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        @media screen and (min-width: 769px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
 
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                background-image: url('bg.svg');
+            }
         }
 
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            background-image: url('bg.svg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-color: white;
+        @media screen and (max-width: 768px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html,
+            body {
+                transform: scale(2);
+                width: 100%;
+                height: 100%;
+                overflow-x: scroll;
+                overflow-y: scroll;
+                background-image: url('bg.svg');
+                background-size: contain;
+                background-position: left;
+                background-repeat: no-repeat;
+            }
         }
     </style>
 </head>
 
-<body>
-
-</body>
+<body></body>
 
 </html>
